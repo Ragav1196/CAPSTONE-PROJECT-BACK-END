@@ -7,7 +7,7 @@ import cors from "cors";
 dotenv.config();
 
 const app = express();
-const PORT = 9000;
+const PORT = process.env.PORT;
 const MONGO_URL = process.env.MONGO_URL;
 
 async function CreateConnection() {
